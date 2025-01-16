@@ -43,7 +43,7 @@ describe('LinkedList', function () {
         linkedList.prepend(10);
         linkedList.append(3);
 
-        linkedList.print();
+        linkedList.print(log);
 
         expect(log.callCount).to.equal(3);
         expect(log.getCall(0).args[0]).to.equal(10);
